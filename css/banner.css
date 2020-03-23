@@ -27,7 +27,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #fff;
-}
+} 
 
 #banner h2{
     font-size: 24px;
@@ -35,9 +35,8 @@
 
 .intro{
     color: black;
-    font-size: 10px;
-    padding: 20px;
-    transform: translateY(-50%);
+    font-size: 18px;
+    margin-top: 20px; 
 }
 
 #banner a{
