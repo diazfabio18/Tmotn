@@ -1,0 +1,34 @@
+#blog .contenedor{
+    display: flex; /*imagenes en una sola linea*/
+    justify-content: center;
+    flex-wrap: wrap; /*cuando u element no encaha, baja*/
+}
+
+#blog article {
+    margin: 10px; /*separacion entre imaeegs*/
+}
+
+#blog img{
+    width: 100%;
+    max-width: 280px;
+}
+
+#blog h3, h4{
+    text-align: center;
+}
+
+@media (min-width:778px){
+    #blog img{
+        width: 100%;
+        max-width: 600px;
+        margin: 5px; /*separacion entre imaeegs*/
+    }
+}
+
+@media (min-width:1024px){
+    #blog img{
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
