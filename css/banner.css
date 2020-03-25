@@ -67,6 +67,15 @@ a h1{
     color: white;
 }
 
+#banner3 p
+{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    /*transform: translateX(-50%) translateY(-50%);
+    color: #fff;*/
+}
+
 @media (min-width:480px){
     #banner h2{
         font-size: 28px;
