@@ -1,0 +1,14 @@
+.copy{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+footer {
+    /*display: flex;
+    flex-wrap: wrap;*/
+
+    background: rgb(247, 100, 210);
+    color: white;
+}

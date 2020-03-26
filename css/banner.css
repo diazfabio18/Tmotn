@@ -70,8 +70,8 @@ a h1{
 #banner3 p
 {
     position: absolute;
-    top: 60%;
-    left: 70%;
+    top: 50%;
+    left: 65%;
     /*transform: translateX(-50%) translateY(-50%);
     color: #fff;*/
 }

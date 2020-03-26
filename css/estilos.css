@@ -4,6 +4,7 @@
 @import url(menu.css);
 @import url(banner.css);
 @import url(blog.css);
+@import url(footer.css);
 
 *{
     margin:0;
@@ -45,14 +46,6 @@ section{
     margin-bottom: 25px;
 }
 
-.copy{
-    font-size: 20px;
-}
-
-footer .contenedor{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .sociales{
     width: 100%;
