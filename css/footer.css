@@ -6,9 +6,31 @@
 }
 
 footer {
-    /*display: flex;
-    flex-wrap: wrap;*/
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background: rgb(247, 100, 210);
     color: white;
+}
+
+footer img{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+}
+
+#contact{
+    background: rgb(172, 157, 157);
+    padding-bottom: 20px;
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    
+}
+
+#contact img{
+    height: 60px;
+    width: 60px;
+    
+    
 }
