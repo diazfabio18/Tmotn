@@ -2,6 +2,7 @@
     display: flex; /*imagenes en una sola linea*/
     justify-content: center;
     flex-wrap: wrap; /*cuando u element no encaha, baja*/
+    width: 100%;
 }
 
 #blog article {
@@ -10,7 +11,7 @@
 
 #blog img{
     width: 100%;
-    max-width: 280px;
+    max-width: 290px;
 }
 
 #blog h3, h4{
@@ -40,5 +41,11 @@
     #blog video{
         width: 800px;
     }
+
+    #blog article {
+        margin: 200px; /*separacion entre imaeegs*/
+    }
+
+    
 }
 
