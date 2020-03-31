@@ -7,7 +7,7 @@ Vue.component('figura',{
     template:
     `
     <div>
-        
+
         <a :href="enlace" v-if="enlace !== '' && enlace !== 'video'">
             <img :src="numero" :alt="alt"/>
         </a>
@@ -17,6 +17,8 @@ Vue.component('figura',{
         <video :src="numero"  controls :alt="alt" v-else />
 
             <h4 class="des">{{fecha}}</h4>
+
+            <hr v-if="pp !== ''"/>
 
             <p style="text-align: center;" class="des" v-if="pp !== ''">{{pp}}</p>
 

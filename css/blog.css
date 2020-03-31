@@ -31,6 +31,14 @@
     max-width: 300px;
     background: rgb(245, 76, 194);
     border-radius: 5px;
+
+    box-shadow: 0px 0px 6px rgba(0, 0,0, 1);
+}
+
+#appp div:hover{
+    transition-duration: 0.2;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0,0, 0.7);
 }
 
 article{
@@ -69,6 +77,14 @@ article{
 .des{
     color: white;
     padding: 2%;
+}
+
+#blog div hr{
+    border: 1px solid white;
+    border-radius: 5px;
+    /*width:50%;*/
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #blog div video{
