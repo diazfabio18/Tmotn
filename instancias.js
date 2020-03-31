@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '25.3 - 31/03/20',
+                numero: './numbers/25_3number.jpg',
+                alt: 25.3,
+                enlace: '',
+                parrafo: 'Sólo si tu quieres'
+            },{
+                
                 fecha: '25.2 - 29/03/20',
                 numero: './numbers/25_2number.gif',
                 alt: 25.2,
