@@ -4,6 +4,14 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '26 - 02/04/20',
+                numero: './numbers/26number.png',
+                alt: 26,
+                enlace: '',
+                parrafo: 'Un transistor feliz :)'
+            },
+            {
+                
                 fecha: '25.3 - 31/03/20',
                 numero: './numbers/25_3number.jpg',
                 alt: 25.3,
