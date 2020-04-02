@@ -20,7 +20,7 @@ footer img{
 }
 
 #contact{
-    background: rgb(172, 157, 157);
+    background: rgba(172, 157, 157,0.7);
     padding-bottom: 20px;
     display: inline-block;
     margin: auto;
@@ -28,9 +28,16 @@ footer img{
     
 }
 
+figure{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+
+
 #contact img{
     height: 60px;
     width: 60px;
-    
     
 }
