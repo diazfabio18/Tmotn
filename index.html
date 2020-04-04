@@ -45,52 +45,49 @@
             </div>
         </section>
 
+        <section id="bienvenidos">
+            <div class="contenedor">
+                <h2>¡Buenos días Julieta!</h2>
 
+                <div class="contenedor">
+                    <section id="banner3">
+                        <a href="https://www.instagram.com/juliettavar/?hl=es-la"><p style="font-size: 20px;">@juliettavar</p></a>
+                        <a href="https://www.instagram.com/juliettavar/?hl=es-la"><img src="./img/banners/rosabanner.jpg" alt="rosabanner"></a>
+                        <br>
+                    </section>
+                </div>
 
-    <section id="bienvenidos">
-        <div class="contenedor">
-        <h2>¡Buenos días Julieta!</h2>
+                <p>Este sitio ha sido creado con el proposito de demostrarte varias cosas que he hecho este tiempo: </p>
+                <br><p>
+                    <ul>
+                        <li>1. El hecho de estar lejos no significa que me olvidé de tí.</li>
+                        <li>2. Valorarte con cada muestra de afecto original.</li>
+                        <li>3. Hacerte feliz de alguna forma.</li>
+                    </ul>
+                </p>
 
-        <div class="contenedor">
-            <section id="banner3">
-                <a href="https://www.instagram.com/juliettavar/?hl=es-la"><p style="font-size: 20px;">@juliettavar</p></a>
-                <a href="https://www.instagram.com/juliettavar/?hl=es-la"><img src="./img/banners/rosabanner.jpg" alt="rosabanner"></a>
-                <br>
-            
+                <br><br><p>Este sitio se actualizará constantemente, por lo tanto, estate atenta a las novedades!</p>
+                <br><br><p><strong>Actualización 02/04/2020: Número 26 añadido!</strong></p>
+                <!--<div id="app"><actualizacion :todo="lista_numeros[0]"></actualizacion></div> -->
+            </div>
         </section>
-    </div>
-
-        <p>Este sitio ha sido creado con el proposito de demostrarte varias cosas que he hecho este tiempo: </p>
-        <br><p>
-            <ul>
-                <li>1. El hecho de estar lejos no significa que me olvidé de tí.</li>
-                <li>2. Valorarte con cada muestra de afecto original.</li>
-                <li>3. Hacerte feliz de alguna forma.</li>
-            </ul>
-        </p>
-
-        <br><br><p>Este sitio se actualizará constantemente, por lo tanto, estate atenta a las novedades!</p>
-        <br><br><p><strong>Actualización 02/04/2020: Número 26 añadido!</strong></p>
-        <!--<div id="app"><actualizacion :todo="lista_numeros[0]"></actualizacion></div> -->
-</div>
-    </section>
-
-    <section id="blog">
-        <h3>Destacados</h3>
-        <div class="contenedor">
+    </main>
+        <section style="margin-bottom: 0px;" id="blog">
+            <h3>Destacados</h3>
+            <div class="contenedor">
             
-        <div id="appp">
-            <figura v-for="i of destacados" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
-           </div>
+                <div id="appp">
+                    <figura v-for="i of destacados" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
+                </div>
         
-        <article>
-            <h3>Especial</h3>
+            <article>
+                <h3>Especial</h3>
     <a href="https://www.buenosaires.gob.ar/coronavirus/consejos-y-recomendaciones-para-prevenir-el-contagio-del-covid-19"><img src="./img/virus-scaled.jpg" alt="1"></a>
             </article>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    </main>
+    
 
     <div id="ap2">
         <cabecera></cabecera>

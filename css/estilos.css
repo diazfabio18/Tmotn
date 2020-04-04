@@ -48,6 +48,9 @@ section{
     margin-bottom: 25px;
 }
 
+#blog{
+    margin-bottom: 0px;
+}
 
 .sociales{
     width: 100%;
@@ -64,7 +67,9 @@ li{
     list-style: none;
 }
 
-
+main{
+    height: 100%;
+}
 
 @media (min-width:1024px)
 {
