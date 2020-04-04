@@ -13,6 +13,7 @@ footer {
     color: white;
 }
 
+
 footer img{
     height: 30px;
     width: 30px;
@@ -29,8 +30,8 @@ footer img{
 }
 
 figure{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
 }
 
