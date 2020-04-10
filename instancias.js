@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '28 - 10/04/20',
+                numero: './numbers/28number.png',
+                alt: 28,
+                enlace: 'https://www.ecured.cu/Los_n%C3%BAmeros_secretos_del_amor',
+                parrafo: 'Significado tocando la imagen!'
+            },{
+                
                 fecha: '27 - 06/04/20',
                 numero: './numbers/27number.png',
                 alt: 27,
