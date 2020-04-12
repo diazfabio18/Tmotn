@@ -84,6 +84,114 @@ a h1{
     text-decoration: none;
 }
 
+/*Tarjeta responsiva de presenctacion Fyluj*/
+
+.container8{
+    /*display: flex;*/
+    /*display: block;*/
+    align-items: center;
+    justify-content: center;
+    /*height: 100vh;*/
+    background: rgba(236, 63, 199,0.6);
+    padding: 20px ;
+}
+
+.card-container8{
+    /*display: flex;
+    width: 80%;*/
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0, .2); 
+
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.subheader{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion8{
+    background: #fbfbfb;
+}
+
+.subheader, .descripcion8{
+    padding: 20px;
+    text-align: center;
+}
+
+.subheader a{
+    /*position: relative;*/
+    display: block;
+}
+
+.subheader img{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0,0,0, 0.07);
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.subheader a:hover img{
+    box-shadow: 0 0 0 12px rgba(0,0,0, 0.1);
+}
+
+.subheader h2{
+    color: #f0522a;
+}
+
+.subheader h4{
+    margin-bottom: 6px;
+}
+
+/*.descripcion{
+    position: relative;
+}*/
+
+.descripcion8 p{
+    margin: 5px 30px;
+}
+
+.descripcion8 .social{
+    margin-top: 50px;
+}
+
+.social img{
+    height: 50px;
+    width: 50px;
+}
+/* **************************************  */
+@media (min-width: 650px){
+    .card-container8{
+        /*display: block;
+        width: 90%;*/
+        display: flex;
+    /*width: 80%;*/
+    margin-left: 15%;
+    margin-right: 15%;
+    }
+
+    .subheader{
+        padding: 20px 20px 5px 20px;
+       
+        border-right: 1px solid #ddd;
+    }
+
+    .descripcion8{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+
+    .subheader h4{
+        margin: 0;
+    }
+}
+
+
 @media (min-width:480px){
     #banner h2{
         font-size: 28px;
