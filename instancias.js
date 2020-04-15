@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '28.1 - 15/04/20',
+                numero: './numbers/28_1number.png',
+                alt: 28.1,
+                enlace: '',
+                parrafo: '♋'
+            },{
+                
                 fecha: '28 - 10/04/20',
                 numero: './numbers/28number.png',
                 alt: 28,
