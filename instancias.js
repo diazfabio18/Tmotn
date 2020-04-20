@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '29 - 20/04/20',
+                numero: './numbers/29_number.jpg',
+                alt: 29,
+                enlace: '',
+                parrafo: 'Esta flor está naciendo en mi casa. ¿Me podes decir por favor que tipo de flor es? Gracias 😏'
+            },{
+                
                 fecha: '28.2 - 17/04/20',
                 numero: './numbers/28_2number.png',
                 alt: 28.2,
