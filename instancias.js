@@ -4,6 +4,14 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '29.1 - 22/04/20',
+                numero: './numbers/29_1number.jpg',
+                alt: 29.1,
+                enlace: '',
+                parrafo: ''
+            },
+            {
+                
                 fecha: '29 - 20/04/20',
                 numero: './numbers/29_number.jpg',
                 alt: 29,
