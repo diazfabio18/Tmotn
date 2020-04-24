@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '29.2 - 24/04/20',
+                numero: './numbers/29_2number.mp4',
+                alt: 29.2,
+                enlace: 'video',
+                parrafo: 'Avances sobre el número 30! 😄. Aprendiendo cada día más, y superando mis propios límites. Edition by Kizoa'
+            },{
+                
                 fecha: '29.1 - 22/04/20',
                 numero: './numbers/29_1number.jpg',
                 alt: 29.1,
