@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '29.3 - 29/04/20',
+                numero: './numbers/29_3number.png',
+                alt: 29.3,
+                enlace: '',
+                parrafo: 'Aunque los servidores latinoamericanos de Facebook no lo han implementado, sería una buena idea implementarlo un día de estos, o ponele 🙃'
+            },{
+                
                 fecha: '29.2 - 24/04/20',
                 numero: './numbers/29_2number.mp4',
                 alt: 29.2,
