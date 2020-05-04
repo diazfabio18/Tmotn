@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '29.4 - 04/05/20',
+                numero: './numbers/29_4number.png',
+                alt: 29.4,
+                enlace: '',
+                parrafo: 'Sigo trabajando para mejorar este lugar. La cuarentena me hace pensar muchas cosas creativas! 😊'
+            },{
+                
                 fecha: '29.3 - 29/04/20',
                 numero: './numbers/29_3number.png',
                 alt: 29.3,
@@ -316,5 +323,11 @@ new Vue({
                 parrafo: '(Cuando nos veamos)'
             }
         ]
-    }
+    },
+    methods: {
+        shuffle: function () {
+          //this.lista_numeros = _.shuffle(this.lista_numeros);
+          this.lista_numeros = (this.lista_numeros).reverse();
+        }
+      }
 })

@@ -52,11 +52,35 @@
 
     </main>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+
+
+
+    <style>
+        .flip-list-move {
+  transition: transform 1s;
+}
+    </style>
+
+
     <section id="blog">
         <h3>Lista de números (en constante aumento)</h3><br>
         <div class="contenedor" >
-                 <div id="appp">
+            
+            
+            
+            <div id="appp"> 
+                    
+                <!--<button v-on:click="shuffle">Mezclar</button>-->
+                    <!--<transition-group name="flip-list" tag="figura">-->
+
+
                  <figura v-for="i of lista_numeros" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
+                
+                
+                <!--</transition-group>-->
+                
                 </div>
         </div>
     </section>
