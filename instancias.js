@@ -4,6 +4,13 @@ new Vue({
         lista_numeros: [
             {
                 
+                fecha: '29.5 - 10/05/20',
+                numero: './numbers/29_5number.gif',
+                alt: 29.5,
+                enlace: '',
+                parrafo: 'La programación lleva su tiempo, sin embargo, resultados como este son espectaculares!'
+            },{
+                
                 fecha: '29.4 - 04/05/20',
                 numero: './numbers/29_4number.png',
                 alt: 29.4,
