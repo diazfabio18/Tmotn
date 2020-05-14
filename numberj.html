@@ -13,8 +13,8 @@
     <title >The mystery of the numbers</title>
     <link rel="icon" type="image/png" href="./img/icons/numero_rosa.png" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="caption.js"></script>
     <script src="cabecera.js"></script>
+    <!--<script src="caption.js"></script>-->
 </head>
 <body>
     <header>
@@ -26,27 +26,22 @@
             <nav class="menu">
                 <a href="index.html">Inicio</a>
                 <a href="https://server-tmotn.herokuapp.com/">Tmotn Admin</a>
-                <a href="#">Números F</a>
-                <a href="numberj.html">Números J</a>
+                <a href="numeros.html">Números F</a>
+                <a href="#">Números J</a>
                 <a href="about.html">Sobre mi</a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main style="background: rgba(247, 100, 210, 0.822);">
 
         <section  style="margin-bottom: 0px;" id="banner">
-            <img src="./img/banners/rosaport.jpg"   id="rosa" alt="."> 
-            <div class="contenedor">
-                <h2 class="intro">El significado de los números</h2>
-                <br><p class="intro"><Strong>¿Alguna vez pensaste en que podría hacer alguien que por diversos factores no puede
-                    ver a la persona que uno quiere? Bueno, para contestar a esa pregunta me he enfocado en conceptos
-                    que conozco: Electrónica y programación (si, así como lo lees). <br><br>
-                    Veras, si la ingeniería se basa en resolver problemas, y a su vez, el de crear sistemas
-                    que solucionen dichos problemas, entonces, porque no crear un sistema en que pueda comunicarme?
-                    Fue entonces cuando el sistema de números nació.
-                    <br><br>Una manera de llevar un registro de mis acciones que comenzó desde la última vez que nos vimos
-                    y que espero completar cuando quieras volver a verme.</Strong>
+            <img src="./img/banners/japonesbanner.jpg"  style="padding-top: 10px;" id="rosa" alt="."> 
+            <div class="contenedor" >
+                <h2 class="intro" style="color: white;">Tus propios números</h2>
+                <br><p class="intro" style="color: white;"><Strong>Un apartado especial para visualizar tus propios números <br><br>
+                    A través de Tmotn Admin, puedes subir tus imagenes y visualizarlas acá.
+                    <br><br>Puedes considerarlo como una red social, con un "toque" personal (?.</Strong>
                 </p>
             </div>
         </section>
@@ -66,23 +61,14 @@
 
 
     <section id="blog">
-        <h3>Lista de números (en constante aumento)</h3><br>
+        <h3>Lista de números J</h3><br>
         <div class="contenedor" >
-            
-            
-            
+
             <div id="appp"> 
-                    
-                <!--<button v-on:click="shuffle">Mezclar</button>-->
-                    <!--<transition-group name="flip-list" tag="figura">-->
 
-
-                 <figura v-for="i of lista_numeros" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
-                
-                
-                <!--</transition-group>-->
-                
-                </div>
+                 <figura v-for="i of lista_numerosJ" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
+            
+           </div>
         </div>
     </section>
 
@@ -90,7 +76,9 @@
         <cabecera></cabecera>
     </div>
 
-    <script src="instancias.js"></script>
+     <script src="caption.js"></script>
+    <script src="instanciaJ.js"></script>
+    <!--<script src="captionJ.js"></script>-->
     <script src="instancias2.js"></script>
 </body>
 </html>

@@ -1,7 +1,134 @@
 new Vue({
     el: '#appp',
     data: {
+        a: 1,
         lista_numeros: [
+
+        ],
+        post: {
+            fecha: '',
+            numero: '',
+            alt: '',
+            enlace: '',
+            parrafo: ''
+        },
+        
+        destacados: [
+            {
+                
+                fecha: '24 - 25/03/20',
+                numero: './numbers/24number.mp4',
+                alt: 24,
+                enlace: 'video',
+                parrafo: 'Je t\'aime by Richard Clayderman'
+            },
+            {
+                
+                fecha: '25.2 - 29/03/20',
+                numero: './numbers/25_2number.gif',
+                alt: 25.2,
+                enlace: '',
+                parrafo: 'Especial por extensión de la cuarentena'
+            },
+            {
+                fecha: '1 - ???',
+                numero: './numbers/mystery.jpg',
+                alt: 'misterio',
+                enlace: '',
+                parrafo: '(Cuando nos veamos)'
+            }
+        ]
+    },
+    async created(){
+      //this.cargarr(); 
+      //console.log(this.lista_numeros);
+      const posts = await fetch('https://server-tmotn.herokuapp.com/images/all')
+            .then(function(response) {
+                return response.json();
+            })
+
+       // console.log(this.post);
+        //var q = this.post;
+        //console.log(q);
+                //console.log(this.lista_numeros[0]);
+                //console.log(this.post);
+
+                for(i=(posts.length-1);i>=0;i--){
+                    //console.log(posts[i]);
+                    //console.log(q.fecha);
+
+                    this.post = await this.supercargar(posts[i]);
+                    //console.log(this.post);
+                    //console.log(q);
+
+                     await (this.lista_numeros).push(this.post);
+
+
+                }
+
+
+    },
+    methods: {
+        //shuffle: function () {
+          //this.lista_numeros = _.shuffle(this.lista_numeros);
+          //this.lista_numeros = (this.lista_numeros).reverse();
+        //},
+        async supercargar(barra){
+            var q = {};
+            q.fecha = barra.numero + ' - ' + barra.fecha;
+            q.numero = barra.imgURL;
+            q.alt = barra.alt;
+            q.enlace = await this.veri(barra.imgURL);
+            q.parrafo = barra.parrafo;
+
+            return q
+        },
+        veri(imgurl){
+            if(imgurl.substr(-3) == 'mp4'){
+                return 'video'
+            }
+        },
+        cargarr(){
+            fetch('https://server-tmotn.herokuapp.com/images/all')
+            .then(function(response) {
+                return response.json();
+            })
+            /*.then(function(posts){
+                console.log(posts[0]);
+            })*/
+            .then(function(posts) {
+                //console.log(myJson);
+                console.log(posts);
+
+                var post1 =  {
+                    fecha: '',
+                    numero: '',
+                    alt: '',
+                    enlace: '',
+                    parrafo: ''
+                };
+                console.log(post1);
+                console.log(this.lista_numeros);
+                //console.log(this.post);
+
+                for(i in posts){
+                    console.log(posts[i]);
+                    (this.post).fecha = posts[i].numero + ' - ' + posts[i].fecha;
+                    (this.post).numero = posts[i].imgURL;
+                    (this.post).alt = posts[i].alt;
+                    (this.post).enlace = posts[i].enlace;
+                    (this.post).parrafo = posts[i].parrafo;
+
+                    (this.lista_numeros).push(post);
+                }
+
+            });
+        }
+      }
+})
+
+
+/*
             {
                 
                 fecha: '29.5 - 10/05/20',
@@ -303,38 +430,5 @@ new Vue({
                 alt: 'misterio',
                 enlace: '',
                 parrafo: '(Cuando nos veamos)'
-            }
-        ],
-        destacados: [
-            {
-                
-                fecha: '24 - 25/03/20',
-                numero: './numbers/24number.mp4',
-                alt: 24,
-                enlace: 'video',
-                parrafo: 'Je t\'aime by Richard Clayderman'
-            },
-            {
-                
-                fecha: '25.2 - 29/03/20',
-                numero: './numbers/25_2number.gif',
-                alt: 25.2,
-                enlace: '',
-                parrafo: 'Especial por extensión de la cuarentena'
-            },
-            {
-                fecha: '1 - ???',
-                numero: './numbers/mystery.jpg',
-                alt: 'misterio',
-                enlace: '',
-                parrafo: '(Cuando nos veamos)'
-            }
-        ]
-    },
-    methods: {
-        shuffle: function () {
-          //this.lista_numeros = _.shuffle(this.lista_numeros);
-          this.lista_numeros = (this.lista_numeros).reverse();
-        }
-      }
-})
+            }*/
+        //],

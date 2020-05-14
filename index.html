@@ -26,7 +26,9 @@
             
             <nav class="menu">
                 <a href="#">Inicio</a>
-                <a href="numeros.html">Los números</a>
+                <a href="https://server-tmotn.herokuapp.com/">Tmotn Admin</a>
+                <a href="numeros.html">Números F</a>
+                <a href="numberj.html">Números J</a>
                 <!--<a href="">Especiales</a>-->
                 <a href="about.html">Sobre mi</a>
             </nav>
@@ -70,16 +72,20 @@
                 </p>
 
                 <br><br><p>Este sitio se actualizará constantemente (lo más profesional posible), por lo tanto, estate atenta a las novedades!</p>
-                <br><br><p style="background: rgb(247, 100, 210); color: white; padding: 5px; width: 90%; margin: auto;"><strong>Actualización 10/05/2020: Número 29.5 añadido!</strong></p>
+                <!--<br><br><p style="background: rgb(247, 100, 210); color: white; padding: 5px; width: 90%; margin: auto;"><strong>Actualización 10/05/2020: Número 29.5 añadido!</strong></p> -->
                 <!--<div id="app"><actualizacion :todo="lista_numeros[0]"></actualizacion></div> -->
+                
             </div>
         </section>
     </main>
         <section style="margin-bottom: 0px;" id="blog">
             <h3>Destacados</h3>
             <div class="contenedor">
-            
+                
                 <div id="appp">
+
+                    <br><br><p style="background: rgb(247, 70, 210); color: white; padding: 5px; width: 70%; margin: auto;text-align:center;"><strong>Actualización {{lista_numeros[0].fecha.substr(-10)}}: Número {{lista_numeros[0].alt}} añadido!</strong></p>
+
                     <figura v-for="i of destacados" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
                 </div>
         
