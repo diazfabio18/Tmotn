@@ -5,6 +5,8 @@ new Vue({
         lista_numeros: [
 
         ],
+        lista_numerosF:[],
+            cant_botons : [],
         post: {
             fecha: '',
             numero: '',
@@ -40,39 +42,57 @@ new Vue({
         ]
     },
     async created(){
-      //this.cargarr(); 
-      //console.log(this.lista_numeros);
       const posts = await fetch('https://server-tmotn.herokuapp.com/images/all')
             .then(function(response) {
                 return response.json();
             })
-
-       // console.log(this.post);
-        //var q = this.post;
-        //console.log(q);
-                //console.log(this.lista_numeros[0]);
-                //console.log(this.post);
-
-                for(i=(posts.length-1);i>=0;i--){
-                    //console.log(posts[i]);
-                    //console.log(q.fecha);
-
-                    this.post = await this.supercargar(posts[i]);
-                    //console.log(this.post);
-                    //console.log(q);
-
-                     await (this.lista_numeros).push(this.post);
-
-
-                }
-
+            //Fin promesa Javascript
+            //console.log(posts);
+                await this.insertar_numero(posts);
+            //console.log(this.lista_numeros);
+                var cantidad = (this.lista_numeros.length)/6;
+        console.log(this.lista_numeros.length);
+        this.botones(cantidad);
+        this.boton_presionado(1);
 
     },
+    /*created(){
+        var cantidad = (this.lista_numeros.length)/6;
+        console.log(this.lista_numeros.length);
+        this.botones(cantidad);
+        this.boton_presionado(1);
+    },*/
     methods: {
         //shuffle: function () {
           //this.lista_numeros = _.shuffle(this.lista_numeros);
           //this.lista_numeros = (this.lista_numeros).reverse();
         //},
+        insertar_numero: async function(posts){
+            for(i=(posts.length-1);i>=0;i--){
+
+                this.post = await this.supercargar(posts[i]);
+
+                 await (this.lista_numeros).push(this.post);
+
+            }
+
+        },
+
+        botones: async function (cantidad){
+            for(var i=0;i<cantidad;i++)
+            {   
+                await this.cant_botons.push(i+1);
+            }
+        },
+
+        
+        boton_presionado: function(number){
+            var item = (number -1 )*6;
+            this.lista_numerosF = this.lista_numeros.slice(item, item+6);
+        },
+
+
+
         async supercargar(barra){
             var q = {};
             q.fecha = barra.numero + ' - ' + barra.fecha;

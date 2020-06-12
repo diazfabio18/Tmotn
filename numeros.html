@@ -75,10 +75,17 @@
                     
                 <!--<button v-on:click="shuffle">Mezclar</button>-->
                     <!--<transition-group name="flip-list" tag="figura">-->
+                        <div id="d">
+                            <div id="r">
+                            <button v-for="i of cant_botons" @click="boton_presionado(i)">{{i}}</button>
+                        </div>
+                        </div>
+        
+                        <div id="c">
 
-
-                 <figura v-for="i of lista_numeros" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
+                 <figura v-for="i of lista_numerosF" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
                 
+                 </div>
                 
                 <!--</transition-group>-->
                 

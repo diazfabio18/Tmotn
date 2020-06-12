@@ -65,9 +65,15 @@
         <div class="contenedor" >
 
             <div id="appp"> 
+                <div id="d">
+                    <div id="r">
+                    <button v-for="i of cant_botons" @click="boton_presionado(i)">{{i}}</button>
+                </div>
+                </div>
 
+                <div id="c">
                  <figura v-for="i of lista_numerosJ" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
-            
+                </div>
            </div>
         </div>
     </section>
@@ -77,7 +83,7 @@
     </div>
 
      <script src="caption.js"></script>
-    <script src="instanciaJ.js"></script>
+     <script src="instanciaJ.js"></script>
     <!--<script src="instanciasPrueba.js"></script>-->
     <!--<script src="captionJ.js"></script>-->
     <script src="instancias2.js"></script>

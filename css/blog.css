@@ -11,7 +11,49 @@
     width: 100%;
 }
 
-#appp {
+#appp{
+    display: block;
+}
+
+#d{
+    /*background: red;*/
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#r{
+    /*margin-left: 10%;*/
+    justify-items: center;
+    align-items: center;
+    /*background: blue;*/
+}
+
+#d button{
+    background: transparent;
+    /*background: rgb(235, 17, 180);*/
+    border: 0;
+    margin-left: 2%;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: rgb(235, 17, 180);
+    border-radius: 50%;
+    /*justify-content: center;*/
+    cursor: pointer;
+   
+
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+
+#d button:hover{
+    background: rgb(245, 76, 194);
+    
+}
+
+#appp #c{
     /*background: rgb(170, 0, 0);*/
     display: flex; /*imagenes en una sola linea*/
     justify-content: center;
@@ -25,7 +67,7 @@
     border-radius: 5px;
 }*/
 
-#appp div{
+#appp #c div{
     width: 100%;
     margin: 10px;
     max-width: 300px;
@@ -40,7 +82,7 @@
     transition-duration: 250ms;
 }
 
-#appp div:hover{
+#appp #c div:hover{
     transition-duration: 0.2;
     
     box-shadow: 0px 0px 10px rgba(0, 0,0, 0.7);
@@ -107,7 +149,7 @@ article{
 
 @media (min-width:778px)
 {
-    #appp div {
+    #appp #c div {
         margin: 10px; /*separacion entre imaeegs*/
         width: 40%;
         max-width: 300px;
@@ -121,7 +163,7 @@ article{
 
 @media (min-width:1024px)
 {
-    #appp div {
+    #appp #c div {
         margin: 10px; /*separacion entre imaeegs*/
         width: 30%;
         max-width: 400px;

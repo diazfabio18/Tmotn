@@ -1,7 +1,7 @@
 new Vue({
     el: '#appp',
     data: {
-        lista_numerosJ: [
+        lista: [
             {
                 
                 fecha: '29.5 - 10/05/20',
@@ -303,8 +303,32 @@ new Vue({
                 alt: 'misterio',
                 enlace: '',
                 parrafo: '(Cuando nos veamos)'
-            }]
+            }],
+            lista_numerosJ:[],
+            cant_botons : []
 
+    },
+    methods: {
+        
+        botones: async function (cantidad){
+            for(var i=0;i<cantidad;i++)
+            {   
+                await this.cant_botons.push(i+1);
+            }
+        },
+
+        
+        boton_presionado: function(number){
+            var item = (number -1 )*6;
+            this.lista_numerosJ = this.lista.slice(item, item+6);
+        }
+        
+    },
+    created: function(){
+        var cantidad = (this.lista.length)/6;
+        console.log(this.lista.length);
+        this.botones(cantidad);
+        this.boton_presionado(1);
     }
       
   })

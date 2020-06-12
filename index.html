@@ -85,8 +85,9 @@
                 <div id="appp">
 
                     <br><br><p style="background: rgb(247, 70, 210); color: white; padding: 5px; width: 70%; margin: auto;text-align:center;"><strong>Actualización {{lista_numeros[0].fecha.substr(-10)}}: Número {{lista_numeros[0].alt}} añadido!</strong></p>
-
+                    <br><br><div id="c">
                     <figura v-for="i of destacados" :numero="i.numero" :fecha="i.fecha" :alt="i.alt" :enlace="i.enlace" :pp="i.parrafo" :key="i.id" ></figura>
+                </div>
                 </div>
         
             <article>
